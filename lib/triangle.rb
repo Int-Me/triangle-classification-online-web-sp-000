@@ -6,6 +6,10 @@ class Triangle
     @triangle_sides << side_3
   end
 
+  class TriangleError < StandardError
+
+  end
+
   def valid?
     sum_one_two = @triangle_sides[0] + @triangle_sides[1]
     sum_one_three = @triangle_sides[0] + @triangle_sides[2]
@@ -33,6 +37,4 @@ class Triangle
   end
 end
 
-class TriangleError < StandardError
 
-end
